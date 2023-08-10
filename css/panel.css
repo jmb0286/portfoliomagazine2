@@ -1,0 +1,66 @@
+.panel-adm h3{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+   margin-bottom: 16px;
+    padding: 8px;
+    }
+  
+.sidebar{
+  border-right: 1px dashed #333;
+  margin-right: 16px;
+  min-height: 500px;
+  width: 250px;
+  }
+  .sidebar h6{
+    background-color: #CCC;
+    border-bottom: 1px dashed #333;
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+  }
+  .sidebar a{
+    border-bottom: 1px dashed #333;
+    display: block;
+    padding: 4px;
+    }
+    .sidebar i{
+      padding-right: 8px;
+      }
+    .sidebar ul{
+      list-style-type: none;
+      padding: 0;
+      }
+
+.sidebar-content{
+  border-left: 1px dashed #333;
+  border-right: 1px dashed #333;
+  padding: 0;
+  width: 947px;
+  }
+  .sidebar-content h6{
+    background-color: #CCC;
+    padding: 0;
+    margin: 0;
+    }
+  .sidebar-content .listado{
+    background-color: #CCC;
+    border: 1px dashed #333;
+    float: right;
+    margin: 16px;
+    padding: 8px;
+    }
+    .sidebar-content .listado i{
+      padding: 8px;
+      }
+
+  .sidebar-content .form-modificar .form-control,  .sidebar-content .form-modificar .form-select, .sidebar-content .form-modificar .chk-box{
+    background-color: #ccc!important;
+    border-radius: 0!important;
+  }
+  .sidebar-content .form-modificar .chk-box{
+    margin-top: 2.5rem;
+    padding: .5rem;
+  }
+  .sidebar-content .form-modificar .chk-box .form-check{
+    margin-left: .8rem;
+  }

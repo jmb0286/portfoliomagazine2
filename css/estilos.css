@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Itim', Lucida Console, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+
+a{
+    color: #000;
+    text-decoration: none;
+    }
+
+body{
+    font-size: 16px;
+    }
+.logocuenta{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto;
+    padding: 8px;
+    width: 1200px;
+    }
+    
+
+.topnav, footer{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+    margin: 16px auto;
+    padding: 8px;
+    width: 1200px;
+    }
+    .topnav{
+        display: flex;
+        justify-content: space-around;
+        }
+        
+.bottomnav{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto;
+    padding: 8px;
+    }
+
+section{
+    border-bottom: 1px dashed #333;
+    margin: 16px auto;
+    padding: 0;
+    }
+    .titulo-seccion{
+        border-top: 1px dashed #333;
+        border-bottom: 1px dashed #333;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        }
+     
+    select{
+        border: 1.5px dashed #333;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 8px;
+        margin-left: 0;
+        }
+        select.programas, .frontend, .backend, .grafico, .audiovisual{
+            margin-top: 16px;
+            width: 23.73%;
+            margin-right: 16px;
+            }
+            select:last-child{
+                margin-right: 0;
+                }
+
+footer{
+    text-align: center;
+    }
+
+
+.center{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333; 
+    text-align: center;
+    margin: 16px auto;
+    padding: 8px;
+    
+}
+
+.btn-registro, .btn-login{
+    background-color: transparent;
+    border: none
+}
+
+
+
+
+/* COLUMNA CODIGO */
+.col-codigo div{
+    background-color: #CCC;
+    border-radius: 3px;
+    padding: 1rem;
+    color: #333;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.seccion-front{
+    width: 100%!important;
+}
+
+
+/* ESTILOS PAGINA FRONT */
+.borde-html{
+    border: 1px dashed;
+    border-left: 8px solid orange;
+    padding-left: 0.5rem;
+}
+.borde-css{
+    border: 1px dashed;
+    border-left: 8px solid blue;
+    padding-left: 0.5rem;
+}
+.borde-js{
+    border: 1px dashed;
+    border-left: 8px solid yellow;
+    padding-left: 0.5rem;
+}

@@ -1,0 +1,70 @@
+Categoria_Imagen
+================
+
+  idCategoria PK AI
+  anio DATE
+  descripcion VARCHAR 250
+  imagen_principal VARCHAR 250
+
+Detalle Imagen Persona
+======================
+
+    IdDetalle PK, AI
+    IdFamilia INT 11, FK
+    IdImagen INT 11,  FK
+
+    relacion_det_imagen
+    | idImagen | portfoliomagazine | imagenes | idImagen |
+    
+    relacion_imagen_familia
+    | idFamilia | portfoliomagazine | familia | idFamilia |
+
+Detalle Imagen Persona
+======================
+  
+    idDetallePersona PK, AI
+    idImagen INT 11, FK
+    idPersona INT 11, FK
+
+    relacion_detalle_imagen
+    | idImagen | portfoliomagazine | imagenes | idImagen |
+   
+    relacion_detalle_persona
+    | idPersona | portfoliomagazine | personas | idPersona | 
+
+
+Familia
+=======
+
+    idFamalia PK, AI
+    familia
+
+Imágenes
+========
+
+    idImagen INT 11, PK, AI
+    fecha VARCHAR 100
+    mes VARCHAR 250
+    idViaje INT 11, FK
+    imagen VARCHAR 150
+    idInmueble INT 11, FK
+    idLugar INT 11, FK
+
+Inmuebles
+=========
+
+    idInmueble INT 11, PK, AI
+    nombre VARCHAR 250
+
+Lugar
+=====
+    
+    idLugar INT 11, PK, AI
+    nombre VARCHAR 250
+
+Personas
+========
+
+    idPersona INT 11, PK, AI
+    nombre VARCHAR 250
+

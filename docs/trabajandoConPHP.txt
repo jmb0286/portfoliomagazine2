@@ -1,0 +1,43 @@
+TRABAJANDO CON PHP:
+===================
+
+01) Registrar Un Usuario en una Base De Datos
+02) Validar el Formulario con JavaScript 
+03) Querys De MySQL
+
+
+01) Pasos Para Registrar Un Usuario
+===================================
+
+1. Creo la base de datos con la que voy a trabajar
+2. Después hago el formulario con las campos necesarios y con el que voy a trabajar
+3. Después capturo las variables del formulario a traves del método 
+    a) $_SERVER['REQUEST_METHOD'] == "POST"
+    b) $nombre = $_POST['nombre']; y asi con las demás variables que vienen del formulario.
+       $imgAvatar = $_FILES['avatar']['tmp_name']; Estas son para las imágenes. 
+       $imgName = $_FILES['avatar']['name']; Estas son para las imágenes
+4. Después valido el formulario mediante PHP:
+    a) Verifico que los campos no estén vacíos. 
+    b) Verificio que las contraseñas sean iguales (preguntarle a Manu)
+5. Después de validar el formulario en el else 
+    a) Inserto el usuario con el Inserto
+    b) Redirecciono el usuario al login
+6. Después de validar los datos registro el usuario en la base de datos y lo redirecciono al login (iniciar sesion)
+
+02) Logear Un Usuario
+---------------------
+1. Capturar los datos del formmulario una vez que envía (petición tipo POST)
+2. Ejecutar consulta SQL para verificar si el usuario existe y conicide con el correo y contraseña ingresados
+3. Si existe, procedo a crear las variables session de que un usuario está logeado
+   La varible la creamos en el documento Inciar Sesión
+4. Redireccionar al home o panel por si tiene algun error.
+
+
+
+
+// BASE DE DATOS 
+================
+
+1) RELACION UNO A MUCHOS
+   
+2) RELACION DE MUCHOS A MUCHOS

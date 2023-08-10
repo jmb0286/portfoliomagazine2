@@ -1,0 +1,81 @@
+PORTFOLIO-MAGAZINE: Preguntas
+=============================
+
+Tabla Lecciones:
+----------------
+  idLeccion PK
+  titulo
+  descripcion
+  contenido
+  urlVideo
+  portadaLeccion
+
+Tabla: detalle_categoria_leccion
+--------------------------------
+
+  Def.: Una leccion tenía más de una categoría
+        Si filtro por Front-End trae solo HTML, CSS, JS
+        O si no filtro tambien solo por HTML, CSS o JS
+
+  idDetalle PK
+  idLeccion FK*
+  idCategoria
+ 
+  fk_leccion --> INDEX --> idLeccion
+  fk_categoria --> INDEX --> idCategoria
+  
+  Relaciones
+
+   relacion_detalleC_Leccion
+	| idLeccion | pmtres | lecciones | IdLeccion
+
+   relacion_detalleC_Categoria:
+	| idCategoria | pmtres | Categorias | IdCategoria |
+  
+   detalleC -->detalleCategoria
+
+  
+Filtrar por una categoria en especifico
+
+  SELECT * FROM * lecciones INNER JOIN detalle_categoria_leccion AS dc ON        dc.idLeccion = lecciones.idLeccion WHERE dc.idCategoria = 2;
+
+Tabla: Usuarios:
+----------------
+   idUsuario PK
+   nombre (varchar 250)
+   apellido (varchar 250)
+   correo (varchar 250)
+   password (varchar 250)
+   avatar (varchar 250)
+   rol (varchar 250)
+   telefono (varchar 250)
+   lost_pass (varchar 250)
+  
+Tabla: Post_blog
+----------------
+
+  idPost
+  titulo
+  descripcion
+  contenido
+  portada VARCHAR
+  fechaPublicacion DATETIME
+  idAutor INT
+  idCategoriaBlog
+  
+Tabla: Categorias_blog
+----------------------
+
+  idCategoria PK, AI
+  categoria VARCHAR 250
+   
+
+  fk_usuario --> INDEX --> idAutor
+  fk_categoria_blog --> INDEX --> idAutor
+ 
+  relacion_post_categoria
+	|  idCategoriaBlog | pmtres | categorias_blog | idCategoria_blog
+
+  relacion_post_autor 
+	|  idAutor | pmtres | usuarios | idUsuario
+

@@ -1,0 +1,18 @@
+PASO A PASO TRABAJANDO CON WHILE
+================================
+1- Generar un listado (Consulta SQL) -> Ej: Listado de Categorías. Utilizando una consulta SELECT -> Esta consulta me devuelve un listado de filas.
+2- Necesito recorrer dicho listado para mostrar los datos en la página. Usando una estructura While.
+
+ while ($categoriaVideo = $resultCategorias->fetch_assoc()) {
+   echo '<option value="'.$categoriaVideo['idCategoriaVideo'].'">'.$categoriaVideo['nombre'].'</option>';
+ }
+
+ Recorrer fila por fila del listado $resultCategorias, y las almacena una por una en la variable $categoriaVideo. Entonces, cada vez que se ejecuta el while (se va a ejecutar tantas veces como filas haya en el resultado).
+ Luego puedo accedera los datos de la fila a través de $categoriaVideo, y especificando el Campo al cual quiero acceder, ejemplo: $categoriaVideo['nombre'], otro ejemplo: $categoriaVideo['idCategoriaVideo']
+
+
+
+
+PASO A PASO TRABAJANDO CON NUM_ROWS
+================================
+1- En base a un listado (Consulta SQL SELECT), la funcion NUM_ROWS me devuelve un numero entero que hace referencia a la cantidad de filas obtenidas por esa consulta. 

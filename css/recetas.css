@@ -1,0 +1,16 @@
+.recetapost p:first-child{
+    margin-bottom: 0;
+}
+.recetapost .fila-titulos{
+    border: 1px dashed #333;
+}
+.recetapost .col-ingredientes{
+    background-color: #f2f2f2;
+    border: 1px dashed #333;
+}
+.recetapost .col-preparacion p{
+    background-color: #f2f2f2;
+    border: 1px dashed #333;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}

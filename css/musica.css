@@ -1,0 +1,21 @@
+.musica .lista-info{
+
+        height: 84px;
+        background-color: #CCC;
+        border: 1px dashed #333;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.musica .lista-info i{
+    font-size: 24px;
+    margin: auto;
+}
+.musica .enlace-lista{
+    transition: all .3s ease;
+}
+.musica .enlace-lista:hover{
+    opacity: .6;
+}

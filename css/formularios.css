@@ -1,0 +1,33 @@
+.registro .contenedor-botones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.registro .contenedor-botones .btn-registro{
+    display: block;
+    padding: 0.5rem;
+    width: 160px;
+    background: #096;
+    color: #fff;
+    transition: all .3s ease;
+}
+.registro .contenedor-botones .btn-iniciar{
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    background: #069;
+    color: #fff;
+    width: 160px;
+    transition: all .3s ease;
+}
+.registro .contenedor-botones .btn-iniciar:hover, .registro .contenedor-botones .btn-registro:hover{
+    opacity: .6;
+}
+
+.registro .col-inputs{
+    border-right: 1px solid #ccc;
+    padding-right: 2rem;
+}
+.registro .contenedor-iconos i{
+    font-size: 24px;
+}
